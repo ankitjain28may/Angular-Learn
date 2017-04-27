@@ -1,0 +1,6 @@
+<div *ngIf="check" >{{name}}</div>
+<input type="text" name="name" value="name" [(ngModel)]="name">
+<ul>
+    <li *ngFor="let value of values; let i= index" (click)="change(i)" >{{value}}</li>
+</ul>
+
