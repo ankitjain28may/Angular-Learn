@@ -1,6 +1,6 @@
-<div *ngIf="check" >{{name}}</div>
-<input type="text" name="name" value="name" [(ngModel)]="name">
 <ul>
-    <li *ngFor="let value of values; let i= index" (click)="change(i)" >{{value}}</li>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
 </ul>
-
+<hr />
+<router-outlet></router-outlet>
